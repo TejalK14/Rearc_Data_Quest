@@ -4,6 +4,7 @@ Access_Key/
 # Terraform
 Terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/6.15.0/darwin_amd64/
 Terraform/.terraform.lock.hcl
+Terraform/terraform.tfstate
 
 # Editors
 .vscode/
