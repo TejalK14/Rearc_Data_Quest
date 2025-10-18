@@ -17,3 +17,6 @@ __pycache__/
 .Python
 build/
 package/
+
+# Mac os Finder
+.DS_Store
