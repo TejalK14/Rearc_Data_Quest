@@ -16,7 +16,7 @@ This is Rearc Data Quest that automates the data sync from the bls.gov public da
  4. [Submission](#Submission)
 
 ## Architecture
- ![Architecture](/images/Rearc_Data_Quest.png)
+ ![Architecture](/Images/Rearc_Data_Quest.png)
 
 ## Project Structure
 
