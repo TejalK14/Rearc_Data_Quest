@@ -23,7 +23,7 @@ This is Rearc Data Quest that automates the data sync from the bls.gov public da
 This project contains the following files and folders:
 ```
     /REARC_DATA_QUEST
-    ├── Access_Key              # To store cccess key for AWS account              
+    ├── Access_Key              # To store Access key for AWS account              
     ├── Images                  # Architecture Image
     ├── Lambda  
         ├── bls_sync            # Lamnda handler function for bls data sync
@@ -55,15 +55,15 @@ terraform init
 terraform plan
 terraform apply
 ```
-6. Now log into your AWS console and you should see the following resources creates 
+6. Now log into your AWS console and you should see the following resources created 
     - S3 bucket for data sync
     - S3 bucket to store output reports
     - Lambda function to extract and store data into S3 bucket
     - Lambda function to do data analysis and output reports
     - Lambda Role (with permission to s3 access)
 7. Run lambda function "bls_sync_lambda" to test the Lambda. It should run succesfully and you should be able to view the logs. The S3 data sync bucket should now have the files downloaded from the BLS.gov site and Data USA API into a json file.
-8.Run Lambda  generate_reports_lambda. This Lambda will read files from data sync S3 buckets perform data analysis and store the output reports into the output S3 bucket.
-8. You can now empty the S3 buckets and run the following command to detsroy your AWS resources.
+8. Run Lambda generate_reports_lambda. This Lambda will read files from data sync S3 buckets perform data analysis and store the output reports into the output S3 bucket.
+8. You can now empty the S3 buckets and run the following command to destroy your AWS resources.
 ```
 terraform destroy
 ```
